@@ -14,10 +14,7 @@ public class Livro {
     public void emprestar(){
         if (this.disponivel){
             this.disponivel = false;
-            System.out.println("Livro emprestado");
-            return;
         }
-        System.out.println("Esse livro já foi emprestado");
     }
 
     public void info(){
@@ -26,11 +23,9 @@ public class Livro {
 
     public void devolver(){
         if (this.disponivel){
-            System.out.println("Este livro já está no acervo");
             return;
         }
         this.disponivel = true;
-        System.out.println("Livro devolvido com sucesso");
     }
 
     public String getTitulo() {

@@ -14,8 +14,9 @@ public class Emprestimo {
             this.dataDevolucao = null;
             livro.emprestar();
             System.out.println("Livro emprestado com sucesso");
+        }else {
+            System.out.println("Livro já foi emprestado");
         }
-        System.out.println("Livro já foi emprestado");
     }
 
     public void registrarDevolucao(){

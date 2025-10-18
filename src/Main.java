@@ -9,6 +9,8 @@ public class Main {
         livros[0] = new Livro("o mais belo carrapato", "Sarapatel", 2013, true);
         emprestimos[0] = new Emprestimo(livros[0], usuarios[0]);
 
-        emprestimos[0].Devolucao();
+        emprestimos[0].registrarDevolucao();
+        emprestimos[0].registrarDevolucao();
+
     }
 }
